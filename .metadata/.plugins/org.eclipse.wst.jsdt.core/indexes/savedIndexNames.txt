@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+C:\Users\JOVAN\Desktop\PROJEKAT SEP\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1346935247.index
+3593399507.index
+3267237167.index
+4238192382.index
+809695298.index
+2052407937.index
+3376531573.index
+837686259.index
+449321630.index

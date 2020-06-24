@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Plaćanje karticom</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Plaćanje karticom</h2>
+        <h3 style="text-align: center;">Iznos: <span th:text="${amount}"></span></h3>
+        <form method="POST" action="" class="col-md-4 col-md-offset-4">
+            <div class="form-group">
+                <label for="pan">Broj kartice (PAN):</label>
+                <input type="text" name="pan" class="form-control" id="pan" />
+            </div>
+            <div class="form-group">
+                <label for="security_code">Security code:</label>
+                <input type="text" name="securityCode" class="form-control" id="security_code" />
+            </div>
+            <div class="form-group">
+                <label for="cardholder_name">Vlasnik kartice (cardholder name):</label>
+                <input type="text" name="cardholderName" class="form-control" id="cardholder_name" />
+            </div>
+            <div class="form-group">
+                <label for="expiry_date">Datum isteka (expiry date) u formatu MM/YY:</label>
+                <input type="text" name="expiryDate" class="form-control" id="expiry_date" />
+            </div>
+            <button type="submit" class="btn btn-default">Potvrdi</button>
+        </form> 
+    </body>
+</html>
